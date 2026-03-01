@@ -2,19 +2,20 @@
 <html lang=en>
   <head>
     <meta charset="UTF-8">
-    <title>Jonathan Orlenius</title>
-    <style>
-      #name {
-        font-family: cursive
-      }
-      #welcome {
-        font-family: Georgia, Garamond
-      }
-    </style>
+    <title>Jonathan Orlenius official website</title>
   </head>
 
   <body>
-    <h1 id="name">Jonathan Orlenius</h1>
-    <p id="welcome"><em> Välkommen till min hemsida!</em></p>
+    <button onclick="englishSwitcher()">If you speak english, click here.</button>
+    <button onclick="swedishSwitcher()">Om du pratar svenska, klicka här.</button>
+
+    <script>
+      function englishSwitcher() {
+        window.location.replace("https://jonathanorlenius.github.io/en/");
+      }
+      function swedishSwitcher() {
+        window.location.replace("https://jonathanorlenius.github.io/sv/");
+      }
+    </script>
   </body>
 </html>
